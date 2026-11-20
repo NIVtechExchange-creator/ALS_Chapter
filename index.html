@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Modeling Respiratory Failure in ALS — Bill Truschel</title>
-<style>body{font-family:Georgia,serif;max-width:760px;margin:40px auto;padding:0 20px;color:#222;line-height:1.55}h1{font-size:1.6em;line-height:1.25}.author{font-size:1.1em;color:#444;margin-top:-6px}a.btn{display:inline-block;margin:18px 0;padding:10px 18px;background:#1f4e79;color:#fff;text-decoration:none;border-radius:4px;font-family:sans-serif}a.btn:hover{background:#163a5a}.small{color:#666;font-size:.9em}</style></head>
+<title>VentiVerse Disease Chapters — Bill Truschel</title>
+<style>body{font-family:Georgia,serif;max-width:760px;margin:40px auto;padding:0 20px;color:#222;line-height:1.55}h1{font-size:1.6em;line-height:1.25}h2{font-size:1.25em;line-height:1.3;margin-top:2em}.author{font-size:1.1em;color:#444;margin-top:-6px}a.btn{display:inline-block;margin:12px 0 4px;padding:10px 18px;background:#1f4e79;color:#fff;text-decoration:none;border-radius:4px;font-family:sans-serif}a.btn:hover{background:#163a5a}.small{color:#666;font-size:.9em}hr{border:none;border-top:1px solid #ccc;margin:2.2em 0}</style></head>
 <body>
-<h1>Modeling Respiratory Failure in Amyotrophic Lateral Sclerosis: Physiology, Mathematical Model, and Validation Against Published Cases</h1>
+<h1>Modeling Respiratory Failure in Neuromuscular Disease: Physiology, Mathematical Models, and Validation Against Published Cases</h1>
 <p class="author">Bill Truschel</p>
-<a class="btn" href="ALS_Validation_Article.pdf">Read / download the article (PDF)</a>
-<h2>Abstract</h2>
+
+<h2>Amyotrophic Lateral Sclerosis</h2>
+<a class="btn" href="ALS_Validation_Article.pdf">Read / download the ALS article (PDF)</a>
 <p>Respiratory failure is the main cause of death in amyotrophic lateral sclerosis (ALS), and non-invasive ventilation (NIV), particularly when started early, prolongs survival. This article explains the respiratory physiology of ALS and a mathematical model of it implemented in the VentiVerse ventilatory physiology simulator. Clinic measurements (MIP, MEP, FVC % predicted, blood gases, demographics) set the respiratory muscle capacity, which is limited by length–tension, force–velocity and fatigue; the model also includes effort-driven rapid shallow breathing, ALS hypermetabolism, a bicarbonate-dependent CO₂ setpoint, sleep stages, and the NIV interface.</p>
-<p>Bulbar- and limb-onset presets are demonstrated across wake and sleep, and simulations are compared one by one with published ALS case reports, with a discussion of where the model agrees and why it may differ. A dedicated section uses the cases and simulations to develop mechanical ventilation strategies: why support is needed most during sleep, pressure-targeted versus volume-assured modes, backup rate and ventilator capture, inspiratory time, EPAP and interface, daytime and mouthpiece ventilation, and a simulation-based titration workflow.</p>
-<p class="small">Draft, November 2026.</p>
+<p>Bulbar- and limb-onset presets are demonstrated across wake and sleep, and simulations are compared one by one with published ALS case reports, with a discussion of where the model agrees and why it may differ. A dedicated section uses the cases and simulations to develop mechanical ventilation strategies.</p>
+
+<hr>
+
+<h2>Adult Duchenne Muscular Dystrophy and Chronic Neuromuscular Disease</h2>
+<a class="btn" href="DMD_Validation_Article.pdf">Read / download the adult DMD article (PDF)</a>
+<p>Respiratory failure is the main cause of death in Duchenne muscular dystrophy (DMD) without ventilatory support, and nocturnal hypoventilation precedes daytime hypercapnia. Adults with DMD are small, weak, and have a stiff chest wall. This article builds an adult DMD model in VentiVerse from published cohort data (body size, strength, lung and chest-wall compliance, metabolism, bicarbonate) and a sleep model with REM-sleep hypopneas, a 90-minute NREM–REM cycle, and arousal from hypercapnia and hypoxemia.</p>
+<p>Simulations are compared with published DMD reports and cohorts (Fanfulla 1998, Smith 1988 and 1989, Kim 2021, Segall 1988, Matsumura 1998, Beck 2006, Toussaint 2007). The cases and simulations support a strategy of treating the night first, always using a backup rate set a few breaths below the patient's own rate, sizing pressure support to the small, stiff DMD patient, choosing an inspiratory time of 30–40% of the cycle, and extending support into the day when daytime CO₂ rises.</p>
+
+<p class="small">Drafts, November 2026.</p>
 </body></html>
